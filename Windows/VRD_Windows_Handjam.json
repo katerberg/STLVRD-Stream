@@ -366,7 +366,7 @@
             "push-to-talk": false,
             "push-to-talk-delay": 0,
             "settings": {
-                "file": "C:/Users/Jason Thurston/Desktop/DraftScene.png"
+                "file": "C:/Users/Jason Thurston/Desktop/STLVRD-Stream/Windows/OBS Resources/DraftScene.png"
             },
             "sync": 0,
             "volume": 1.0
@@ -391,7 +391,7 @@
             "settings": {
                 "align": "right",
                 "color": 4278190080,
-                "file": "C:/Users/Jason Thurston/Desktop/VRD/OBS Resources/Player Right.txt",
+                "file": "C:/Users/Jason Thurston/Desktop/STLVRD-Stream/Windows/OBS Resources/Player Right.txt",
                 "font": {
                     "face": "Arial",
                     "flags": 0,
@@ -421,7 +421,7 @@
             "push-to-talk": false,
             "push-to-talk-delay": 0,
             "settings": {
-                "file": "C:/Users/Jason Thurston/Desktop/VRD/OBS Resources/game.png"
+                "file": "C:/Users/Jason Thurston/Desktop/STLVRD-Stream/Windows/OBS Resources/game.png"
             },
             "sync": 0,
             "volume": 1.0
@@ -601,7 +601,7 @@
             "push-to-talk-delay": 0,
             "settings": {
                 "color": 4278190080,
-                "file": "C:/Users/Jason Thurston/Desktop/VRD/OBS Resources/Player Left.txt.txt",
+                "file": "C:/Users/Jason Thurston/Desktop/STLVRD-Stream/Windows/OBS Resources/Player Left.txt.txt",
                 "font": {
                     "face": "Arial",
                     "flags": 0,
@@ -1901,7 +1901,7 @@
             "push-to-talk": false,
             "push-to-talk-delay": 0,
             "settings": {
-                "file": "C:/Users/Jason Thurston/Desktop/VRD/OBS Resources/splash-screen.png",
+                "file": "C:/Users/Jason Thurston/Desktop/STLVRD-Stream/Windows/OBS Resources/splash-screen.png",
                 "unload": true
             },
             "sync": 0,
@@ -2346,7 +2346,7 @@
             "push-to-talk-delay": 0,
             "settings": {
                 "color": 4278190080,
-                "file": "C:/Users/Jason Thurston/Desktop/VRD/OBS Resources/Caster Stage Left.txt",
+                "file": "C:/Users/Jason Thurston/Desktop/STLVRD-Stream/Windows/OBS Resources/Caster Stage Left.txt",
                 "read_from_file": true
             },
             "sync": 0,
@@ -2372,7 +2372,7 @@
             "settings": {
                 "align": "right",
                 "color": 4278190080,
-                "file": "C:/Users/Jason Thurston/Desktop/VRD/OBS Resources/Caster Stage Right.txt",
+                "file": "C:/Users/Jason Thurston/Desktop/STLVRD-Stream/Windows/OBS Resources/Caster Stage Right.txt",
                 "read_from_file": true
             },
             "sync": 0,
