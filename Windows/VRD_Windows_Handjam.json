@@ -14,18 +14,19 @@
         "id": "wasapi_input_capture",
         "mixers": 255,
         "monitoring_type": 0,
-        "muted": false,
+        "muted": true,
         "name": "Mic/Aux",
+        "prev_ver": 402653187,
         "private_settings": {},
         "push-to-mute": false,
         "push-to-mute-delay": 0,
         "push-to-talk": false,
         "push-to-talk-delay": 0,
         "settings": {
-            "device_id": "{0.0.1.00000000}.{ce5e2f85-6c66-4eb1-bcd2-63bb4f72682f}"
+            "device_id": "{0.0.1.00000000}.{4d27cebb-481d-4ff4-8436-b64e8ef11a01}"
         },
         "sync": 0,
-        "volume": 0.19310103356838226
+        "volume": 0.10631794482469559
     },
     "AuxAudioDevice2": {
         "balance": 0.5,
@@ -44,7 +45,10 @@
         "monitoring_type": 0,
         "muted": false,
         "name": "Mic/Aux 2",
-        "private_settings": {},
+        "prev_ver": 402653187,
+        "private_settings": {
+            "mixer_hidden": true
+        },
         "push-to-mute": false,
         "push-to-mute-delay": 0,
         "push-to-talk": false,
@@ -72,6 +76,7 @@
         "monitoring_type": 0,
         "muted": true,
         "name": "Desktop Audio",
+        "prev_ver": 402653187,
         "private_settings": {
             "mixer_hidden": true
         },
@@ -85,8 +90,8 @@
         "sync": 0,
         "volume": 0.0
     },
-    "current_program_scene": "Lotus or Recall",
-    "current_scene": "Lotus or Recall",
+    "current_program_scene": "Game Play",
+    "current_scene": "Game Play",
     "current_transition": "Cut",
     "groups": [],
     "modules": {
@@ -106,6 +111,7 @@
         "output-timer": {
             "autoStartRecordTimer": false,
             "autoStartStreamTimer": false,
+            "pauseRecordTimer": false,
             "recordTimerHours": 0,
             "recordTimerMinutes": 0,
             "recordTimerSeconds": 30,
@@ -115,7 +121,7 @@
         },
         "scripts-tool": []
     },
-    "name": "VRD Windows Handjam",
+    "name": "VRD Windows Handjam (2)",
     "preview_locked": false,
     "quick_transitions": [
         {
@@ -141,9 +147,6 @@
             "name": "Stream Incoming"
         },
         {
-            "name": "Lotus or Recall"
-        },
-        {
             "name": "Draft"
         },
         {
@@ -165,13 +168,287 @@
             "name": "Gameplay - Caster Cam"
         },
         {
-            "name": "Draft - Caster Cam"
+            "name": "TEST camera views"
         },
         {
             "name": "Bottle"
         }
     ],
     "sources": [
+        {
+            "balance": 0.5,
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
+            "enabled": true,
+            "flags": 0,
+            "hotkeys": {},
+            "id": "text_ft2_source",
+            "mixers": 0,
+            "monitoring_type": 0,
+            "muted": false,
+            "name": "Match Record",
+            "prev_ver": 402653187,
+            "private_settings": {},
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "settings": {
+                "color1": 4278190080,
+                "color2": 4278190080,
+                "from_file": true,
+                "text_file": "Z:/katerberg/VRD/Assets/MatchRecord.txt"
+            },
+            "sync": 0,
+            "volume": 1.0
+        },
+        {
+            "balance": 0.5,
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
+            "enabled": true,
+            "flags": 0,
+            "hotkeys": {
+                "libobs.mute": [],
+                "libobs.push-to-mute": [],
+                "libobs.push-to-talk": [],
+                "libobs.unmute": []
+            },
+            "id": "browser_source",
+            "mixers": 255,
+            "monitoring_type": 0,
+            "muted": false,
+            "name": "Gameplay Chat",
+            "prev_ver": 402653187,
+            "private_settings": {},
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "settings": {
+                "height": 400,
+                "url": "https://streamlabs.com/widgets/chat-box/v1/FB27400A11E1F034A724",
+                "width": 200
+            },
+            "sync": 0,
+            "volume": 1.0
+        },
+        {
+            "balance": 0.5,
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
+            "enabled": true,
+            "flags": 0,
+            "hotkeys": {
+                "OBSBasic.SelectScene": [],
+                "libobs.hide_scene_item.Caster Webcam": [],
+                "libobs.hide_scene_item.Draft Area Camera": [],
+                "libobs.show_scene_item.Caster Webcam": [],
+                "libobs.show_scene_item.Draft Area Camera": []
+            },
+            "id": "scene",
+            "mixers": 0,
+            "monitoring_type": 0,
+            "muted": false,
+            "name": "Bottle",
+            "prev_ver": 402653187,
+            "private_settings": {},
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "settings": {
+                "custom_size": false,
+                "id_counter": 3,
+                "items": [
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "group_item_backup": false,
+                        "id": 1,
+                        "locked": false,
+                        "name": "Draft Area Camera",
+                        "pos": {
+                            "x": 200.0,
+                            "y": 63.0
+                        },
+                        "private_settings": {},
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 1.3687499761581421,
+                            "y": 1.3687499761581421
+                        },
+                        "scale_filter": "disable",
+                        "visible": true
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "group_item_backup": false,
+                        "id": 2,
+                        "locked": false,
+                        "name": "Caster Webcam",
+                        "pos": {
+                            "x": 200.0,
+                            "y": 0.0
+                        },
+                        "private_settings": {},
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 0.30703124403953552,
+                            "y": 0.30694442987442017
+                        },
+                        "scale_filter": "disable",
+                        "visible": true
+                    }
+                ]
+            },
+            "sync": 0,
+            "volume": 1.0
+        },
+        {
+            "balance": 0.5,
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
+            "enabled": true,
+            "flags": 0,
+            "hotkeys": {},
+            "id": "text_gdiplus",
+            "mixers": 0,
+            "monitoring_type": 0,
+            "muted": false,
+            "name": "Caster Right",
+            "prev_ver": 402653187,
+            "private_settings": {},
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "settings": {
+                "align": "center",
+                "color": 4278190080,
+                "file": "Z:/katerberg/VRD/Assets/CommentatorRight.txt",
+                "read_from_file": true
+            },
+            "sync": 0,
+            "volume": 1.0
+        },
+        {
+            "balance": 0.5,
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
+            "enabled": true,
+            "flags": 0,
+            "hotkeys": {},
+            "id": "text_gdiplus",
+            "mixers": 0,
+            "monitoring_type": 0,
+            "muted": false,
+            "name": "Caster Left",
+            "prev_ver": 402653187,
+            "private_settings": {},
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "settings": {
+                "align": "center",
+                "color": 4278190080,
+                "file": "Z:/katerberg/VRD/Assets/CommentatorLeft.txt",
+                "read_from_file": true
+            },
+            "sync": 0,
+            "volume": 1.0
+        },
+        {
+            "balance": 0.5,
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
+            "enabled": true,
+            "flags": 0,
+            "hotkeys": {
+                "SlideShow.NextSlide": [],
+                "SlideShow.PlayPause": [],
+                "SlideShow.PreviousSlide": [],
+                "SlideShow.Restart": [],
+                "SlideShow.Stop": []
+            },
+            "id": "slideshow",
+            "mixers": 0,
+            "monitoring_type": 0,
+            "muted": false,
+            "name": "Players",
+            "prev_ver": 402653187,
+            "private_settings": {},
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "settings": {
+                "files": [
+                    {
+                        "hidden": false,
+                        "selected": false,
+                        "value": "C:/Users/Jason Thurston/Desktop/stl-vrd/src/static/pictures"
+                    }
+                ],
+                "playback_behavior": "always_play",
+                "slide_time": 5000
+            },
+            "sync": 0,
+            "volume": 1.0
+        },
+        {
+            "balance": 0.5,
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
+            "enabled": true,
+            "flags": 0,
+            "hotkeys": {},
+            "id": "text_gdiplus",
+            "mixers": 0,
+            "monitoring_type": 0,
+            "muted": false,
+            "name": "BRB",
+            "prev_ver": 402653187,
+            "private_settings": {},
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "settings": {
+                "color": 4278190080,
+                "font": {
+                    "face": "Arial",
+                    "flags": 0,
+                    "size": 36,
+                    "style": "Regular"
+                },
+                "outline": true,
+                "outline_color": 4278190080,
+                "text": "Stream incoming!"
+            },
+            "sync": 0,
+            "volume": 1.0
+        },
         {
             "balance": 0.5,
             "deinterlace_field_order": 0,
@@ -188,7 +465,8 @@
             "mixers": 255,
             "monitoring_type": 0,
             "muted": true,
-            "name": "Draft Area Camera",
+            "name": "Player Camera",
+            "prev_ver": 402653187,
             "private_settings": {
                 "mixer_hidden": true
             },
@@ -198,8 +476,47 @@
             "push-to-talk-delay": 0,
             "settings": {
                 "active": true,
-                "last_video_device_id": "c922 Pro Stream Webcam:\\\\?\\usb#22vid_046d&pid_085c&mi_00#229&e1b9908&0&0000#22{65e8773d-8f56-11d0-a3b9-00a0c9223196}\\global",
-                "video_device_id": "c922 Pro Stream Webcam:\\\\?\\usb#22vid_046d&pid_085c&mi_00#229&e1b9908&0&0000#22{65e8773d-8f56-11d0-a3b9-00a0c9223196}\\global"
+                "frame_interval": 417083,
+                "last_resolution": "1280x720",
+                "last_video_device_id": "c922 Pro Stream Webcam:\\\\?\\usb#22vid_046d&pid_085c&mi_00#227&796360d&0&0000#22{65e8773d-8f56-11d0-a3b9-00a0c9223196}\\global",
+                "res_type": 1,
+                "resolution": "1280x720",
+                "video_device_id": "c922 Pro Stream Webcam:\\\\?\\usb#22vid_046d&pid_085c&mi_00#227&796360d&0&0000#22{65e8773d-8f56-11d0-a3b9-00a0c9223196}\\global"
+            },
+            "sync": 0,
+            "volume": 1.0
+        },
+        {
+            "balance": 0.5,
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
+            "enabled": true,
+            "flags": 0,
+            "hotkeys": {
+                "libobs.mute": [],
+                "libobs.push-to-mute": [],
+                "libobs.push-to-talk": [],
+                "libobs.unmute": []
+            },
+            "id": "browser_source",
+            "mixers": 0,
+            "monitoring_type": 0,
+            "muted": false,
+            "name": "Challonge Standings",
+            "prev_ver": 402653187,
+            "private_settings": {},
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "settings": {
+                "css": "body { background-color: rgba(0, 0, 0, 0); margin: 0px auto; overflow: hidden; }",
+                "fps_custom": true,
+                "height": 1200,
+                "restart_when_active": true,
+                "shutdown": false,
+                "url": "https://challonge.com/8aroof4o/standings",
+                "width": 1280
             },
             "sync": 0,
             "volume": 1.0
@@ -212,18 +529,19 @@
             "flags": 0,
             "hotkeys": {
                 "OBSBasic.SelectScene": [],
-                "libobs.hide_scene_item.Caster Webcam": [],
-                "libobs.hide_scene_item.Draft Area Camera": [],
-                "libobs.hide_scene_item.Player Camera": [],
-                "libobs.show_scene_item.Caster Webcam": [],
-                "libobs.show_scene_item.Draft Area Camera": [],
-                "libobs.show_scene_item.Player Camera": []
+                "libobs.hide_scene_item.Challonge Standings": [],
+                "libobs.hide_scene_item.Splashscreen": [],
+                "libobs.hide_scene_item.StreamLabs AlertBox": [],
+                "libobs.show_scene_item.Challonge Standings": [],
+                "libobs.show_scene_item.Splashscreen": [],
+                "libobs.show_scene_item.StreamLabs AlertBox": []
             },
             "id": "scene",
             "mixers": 0,
             "monitoring_type": 0,
             "muted": false,
-            "name": "Draft - Caster Cam",
+            "name": "Standings",
+            "prev_ver": 402653187,
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
@@ -246,38 +564,9 @@
                         "crop_right": 0,
                         "crop_top": 0,
                         "group_item_backup": false,
-                        "id": 3,
-                        "locked": false,
-                        "name": "Draft Area Camera",
-                        "pos": {
-                            "x": 226.0,
-                            "y": 228.0
-                        },
-                        "private_settings": {},
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "scale_filter": "disable",
-                        "visible": true
-                    },
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 875.0,
-                            "y": 531.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 2,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "group_item_backup": false,
-                        "id": 4,
-                        "locked": false,
-                        "name": "Player Camera",
+                        "id": 2,
+                        "locked": true,
+                        "name": "Splashscreen",
                         "pos": {
                             "x": 0.0,
                             "y": 0.0
@@ -294,209 +583,47 @@
                     {
                         "align": 5,
                         "bounds": {
-                            "x": 478.0,
-                            "y": 269.0
+                            "x": 0.0,
+                            "y": 0.0
                         },
                         "bounds_align": 0,
-                        "bounds_type": 2,
+                        "bounds_type": 0,
+                        "crop_bottom": 375,
+                        "crop_left": 110,
+                        "crop_right": 100,
+                        "crop_top": 519,
+                        "group_item_backup": false,
+                        "id": 1,
+                        "locked": true,
+                        "name": "Challonge Standings",
+                        "pos": {
+                            "x": 119.0,
+                            "y": 215.0
+                        },
+                        "private_settings": {},
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_filter": "disable",
+                        "visible": true
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
                         "crop_bottom": 0,
                         "crop_left": 0,
                         "crop_right": 0,
                         "crop_top": 0,
                         "group_item_backup": false,
                         "id": 5,
-                        "locked": false,
-                        "name": "Caster Webcam",
-                        "pos": {
-                            "x": 691.0,
-                            "y": 370.0
-                        },
-                        "private_settings": {},
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "scale_filter": "disable",
-                        "visible": true
-                    }
-                ]
-            },
-            "sync": 0,
-            "volume": 1.0
-        },
-        {
-            "balance": 0.5,
-            "deinterlace_field_order": 0,
-            "deinterlace_mode": 0,
-            "enabled": true,
-            "flags": 0,
-            "hotkeys": {},
-            "id": "browser_source",
-            "mixers": 0,
-            "monitoring_type": 0,
-            "muted": false,
-            "name": "Counting Down",
-            "private_settings": {},
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "settings": {
-                "url": "https://w2.countingdownto.com/2508065"
-            },
-            "sync": 0,
-            "volume": 1.0
-        },
-        {
-            "balance": 0.5,
-            "deinterlace_field_order": 0,
-            "deinterlace_mode": 0,
-            "enabled": true,
-            "flags": 0,
-            "hotkeys": {},
-            "id": "image_source",
-            "mixers": 0,
-            "monitoring_type": 0,
-            "muted": false,
-            "name": "Draft Overlay",
-            "private_settings": {},
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "settings": {
-                "file": "C:/Users/Jason Thurston/Desktop/STLVRD-Stream/Windows/OBS Resources/DraftScene.png"
-            },
-            "sync": 0,
-            "volume": 1.0
-        },
-        {
-            "balance": 0.5,
-            "deinterlace_field_order": 0,
-            "deinterlace_mode": 0,
-            "enabled": true,
-            "flags": 0,
-            "hotkeys": {},
-            "id": "text_gdiplus",
-            "mixers": 0,
-            "monitoring_type": 0,
-            "muted": false,
-            "name": "Player Right",
-            "private_settings": {},
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "settings": {
-                "align": "right",
-                "color": 4278190080,
-                "file": "C:/Users/Jason Thurston/Desktop/STLVRD-Stream/Windows/OBS Resources/Player Right.txt",
-                "font": {
-                    "face": "Arial",
-                    "flags": 0,
-                    "size": 30,
-                    "style": "Regular"
-                },
-                "read_from_file": true
-            },
-            "sync": 0,
-            "volume": 1.0
-        },
-        {
-            "balance": 0.5,
-            "deinterlace_field_order": 0,
-            "deinterlace_mode": 0,
-            "enabled": true,
-            "flags": 0,
-            "hotkeys": {},
-            "id": "image_source",
-            "mixers": 0,
-            "monitoring_type": 0,
-            "muted": false,
-            "name": "Game Overlay",
-            "private_settings": {},
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "settings": {
-                "file": "C:/Users/Jason Thurston/Desktop/STLVRD-Stream/Windows/OBS Resources/game.png"
-            },
-            "sync": 0,
-            "volume": 1.0
-        },
-        {
-            "balance": 0.5,
-            "deinterlace_field_order": 0,
-            "deinterlace_mode": 0,
-            "enabled": true,
-            "flags": 0,
-            "hotkeys": {
-                "OBSBasic.SelectScene": [],
-                "libobs.hide_scene_item.Caster Webcam": [],
-                "libobs.hide_scene_item.StreamLabs AlertBox": [],
-                "libobs.show_scene_item.Caster Webcam": [],
-                "libobs.show_scene_item.StreamLabs AlertBox": []
-            },
-            "id": "scene",
-            "mixers": 0,
-            "monitoring_type": 0,
-            "muted": false,
-            "name": "Full Screen Casters",
-            "private_settings": {},
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "settings": {
-                "custom_size": false,
-                "id_counter": 2,
-                "items": [
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "group_item_backup": false,
-                        "id": 1,
-                        "locked": false,
-                        "name": "Caster Webcam",
-                        "pos": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "private_settings": {},
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "scale_filter": "disable",
-                        "visible": true
-                    },
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "group_item_backup": false,
-                        "id": 2,
-                        "locked": false,
+                        "locked": true,
                         "name": "StreamLabs AlertBox",
                         "pos": {
                             "x": 0.0,
@@ -523,31 +650,88 @@
             "enabled": true,
             "flags": 0,
             "hotkeys": {
+                "OBSBasic.SelectScene": [],
+                "libobs.hide_scene_item.AlertBox Widget": [],
+                "libobs.show_scene_item.AlertBox Widget": []
+            },
+            "id": "scene",
+            "mixers": 0,
+            "monitoring_type": 0,
+            "muted": false,
+            "name": "StreamLabs AlertBox",
+            "prev_ver": 402653187,
+            "private_settings": {},
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "settings": {
+                "custom_size": false,
+                "id_counter": 1,
+                "items": [
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "group_item_backup": false,
+                        "id": 1,
+                        "locked": false,
+                        "name": "AlertBox Widget",
+                        "pos": {
+                            "x": 918.0,
+                            "y": 0.0
+                        },
+                        "private_settings": {},
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 0.30166667699813843,
+                            "y": 0.30125001072883606
+                        },
+                        "scale_filter": "disable",
+                        "visible": true
+                    }
+                ]
+            },
+            "sync": 0,
+            "volume": 1.0
+        },
+        {
+            "balance": 0.5,
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
+            "enabled": true,
+            "flags": 0,
+            "hotkeys": {
                 "libobs.mute": [],
                 "libobs.push-to-mute": [],
                 "libobs.push-to-talk": [],
                 "libobs.unmute": []
             },
-            "id": "dshow_input",
-            "mixers": 255,
+            "id": "browser_source",
+            "mixers": 0,
             "monitoring_type": 0,
-            "muted": true,
-            "name": "Caster Webcam",
-            "private_settings": {
-                "mixer_hidden": true
-            },
+            "muted": false,
+            "name": "AlertBox Widget",
+            "prev_ver": 402653187,
+            "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
             "push-to-talk": false,
             "push-to-talk-delay": 0,
             "settings": {
-                "active": true,
-                "frame_interval": 166666,
-                "last_resolution": "1280x720",
-                "last_video_device_id": "c922 Pro Stream Webcam:\\\\?\\usb#22vid_046d&pid_085c&mi_00#227&76bb180&0&0000#22{65e8773d-8f56-11d0-a3b9-00a0c9223196}\\global",
-                "res_type": 1,
-                "resolution": "1280x720",
-                "video_device_id": "c922 Pro Stream Webcam:\\\\?\\usb#22vid_046d&pid_085c&mi_00#227&76bb180&0&0000#22{65e8773d-8f56-11d0-a3b9-00a0c9223196}\\global"
+                "fps": 29,
+                "fps_custom": true,
+                "height": 400,
+                "url": "https://streamlabs.com/alert-box/v3/FB27400A11E1F034A724?follows=1&subscriptions=1&resubs=1&donations=1&hosts=1&bits=1&raids=1&redemptions=1&facemaskdonations=1",
+                "width": 600
             },
             "sync": 0,
             "volume": 1.0
@@ -559,56 +743,20 @@
             "enabled": true,
             "flags": 0,
             "hotkeys": {},
-            "id": "text_gdiplus",
+            "id": "image_source",
             "mixers": 0,
             "monitoring_type": 0,
             "muted": false,
-            "name": "Text (GDI+)",
+            "name": "Splashscreen",
+            "prev_ver": 402653187,
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
             "push-to-talk": false,
             "push-to-talk-delay": 0,
             "settings": {
-                "color": 4278190080,
-                "font": {
-                    "face": "Arial",
-                    "flags": 0,
-                    "size": 36,
-                    "style": "Regular"
-                },
-                "text": "1-0"
-            },
-            "sync": 0,
-            "volume": 1.0
-        },
-        {
-            "balance": 0.5,
-            "deinterlace_field_order": 0,
-            "deinterlace_mode": 0,
-            "enabled": true,
-            "flags": 0,
-            "hotkeys": {},
-            "id": "text_gdiplus",
-            "mixers": 0,
-            "monitoring_type": 0,
-            "muted": false,
-            "name": "Player Left",
-            "private_settings": {},
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "settings": {
-                "color": 4278190080,
-                "file": "C:/Users/Jason Thurston/Desktop/STLVRD-Stream/Windows/OBS Resources/Player Left.txt.txt",
-                "font": {
-                    "face": "Arial",
-                    "flags": 0,
-                    "size": 30,
-                    "style": "Regular"
-                },
-                "read_from_file": true
+                "file": "C:/Users/Jason Thurston/Desktop/STLVRD-Stream/Windows/OBS Resources/splash-screen.png",
+                "unload": true
             },
             "sync": 0,
             "volume": 1.0
@@ -624,7 +772,8 @@
             "mixers": 0,
             "monitoring_type": 0,
             "muted": false,
-            "name": "Scryfall",
+            "name": "Chrome Players",
+            "prev_ver": 402653187,
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
@@ -632,7 +781,9 @@
             "push-to-talk-delay": 0,
             "settings": {
                 "cursor": false,
-                "window": "Ancestral Recall · Limited Edition Beta (LEB) #2248 · Scryfall Magic#3A The Gathering Search - Google Chrome:Chrome_WidgetWin_1:chrome.exe"
+                "owner_name": "Microsoft Edge",
+                "window": "St Louis Vintage Rotisserie Draft - Google Chrome:Chrome_WidgetWin_1:chrome.exe",
+                "window_name": "St Louis Vintage Rotisserie Draft"
             },
             "sync": 0,
             "volume": 1.0
@@ -645,16 +796,17 @@
             "flags": 0,
             "hotkeys": {
                 "OBSBasic.SelectScene": [],
-                "libobs.hide_scene_item.Caster Webcam": [],
-                "libobs.hide_scene_item.Game Overlay": [],
-                "libobs.show_scene_item.Caster Webcam": [],
-                "libobs.show_scene_item.Game Overlay": []
+                "libobs.hide_scene_item.Chrome Players": [],
+                "libobs.hide_scene_item.StreamLabs AlertBox": [],
+                "libobs.show_scene_item.Chrome Players": [],
+                "libobs.show_scene_item.StreamLabs AlertBox": []
             },
             "id": "scene",
             "mixers": 0,
             "monitoring_type": 0,
             "muted": false,
-            "name": "Gameplay - Caster Cam",
+            "name": "Players Profiles",
+            "prev_ver": 402653187,
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
@@ -662,7 +814,116 @@
             "push-to-talk-delay": 0,
             "settings": {
                 "custom_size": false,
-                "id_counter": 3,
+                "id_counter": 5,
+                "items": [
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 16,
+                        "crop_left": 4,
+                        "crop_right": 0,
+                        "crop_top": 111,
+                        "group_item_backup": false,
+                        "id": 3,
+                        "locked": true,
+                        "name": "Chrome Players",
+                        "pos": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "private_settings": {},
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 1.0070810317993164,
+                            "y": 1.0078247785568237
+                        },
+                        "scale_filter": "disable",
+                        "visible": true
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "group_item_backup": false,
+                        "id": 5,
+                        "locked": true,
+                        "name": "StreamLabs AlertBox",
+                        "pos": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "private_settings": {},
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_filter": "disable",
+                        "visible": true
+                    }
+                ]
+            },
+            "sync": 0,
+            "volume": 1.0
+        },
+        {
+            "balance": 0.5,
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
+            "enabled": true,
+            "flags": 0,
+            "hotkeys": {
+                "OBSBasic.SelectScene": [],
+                "libobs.hide_scene_item.Caster Left": [],
+                "libobs.hide_scene_item.Caster Right": [],
+                "libobs.hide_scene_item.Game Overlay": [],
+                "libobs.hide_scene_item.Gameplay - Caster Cam": [],
+                "libobs.hide_scene_item.Gameplay Chat": [],
+                "libobs.hide_scene_item.Match Record": [],
+                "libobs.hide_scene_item.Player Camera": [],
+                "libobs.hide_scene_item.Player Left": [],
+                "libobs.hide_scene_item.Player Right": [],
+                "libobs.hide_scene_item.Scryfall": [],
+                "libobs.hide_scene_item.StreamLabs AlertBox": [],
+                "libobs.show_scene_item.Caster Left": [],
+                "libobs.show_scene_item.Caster Right": [],
+                "libobs.show_scene_item.Game Overlay": [],
+                "libobs.show_scene_item.Gameplay - Caster Cam": [],
+                "libobs.show_scene_item.Gameplay Chat": [],
+                "libobs.show_scene_item.Match Record": [],
+                "libobs.show_scene_item.Player Camera": [],
+                "libobs.show_scene_item.Player Left": [],
+                "libobs.show_scene_item.Player Right": [],
+                "libobs.show_scene_item.Scryfall": [],
+                "libobs.show_scene_item.StreamLabs AlertBox": []
+            },
+            "id": "scene",
+            "mixers": 0,
+            "monitoring_type": 0,
+            "muted": false,
+            "name": "Game Play",
+            "prev_ver": 402653187,
+            "private_settings": {},
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "settings": {
+                "custom_size": false,
+                "id_counter": 17,
                 "items": [
                     {
                         "align": 5,
@@ -673,22 +934,286 @@
                         "bounds_align": 0,
                         "bounds_type": 0,
                         "crop_bottom": 0,
-                        "crop_left": 139,
-                        "crop_right": 265,
-                        "crop_top": 59,
+                        "crop_left": 230,
+                        "crop_right": 149,
+                        "crop_top": 0,
                         "group_item_backup": false,
-                        "id": 1,
+                        "id": 4,
                         "locked": true,
-                        "name": "Caster Webcam",
+                        "name": "Player Camera",
                         "pos": {
-                            "x": 868.0,
-                            "y": 388.0
+                            "x": -24.0,
+                            "y": 0.0
                         },
                         "private_settings": {},
                         "rot": 0.0,
                         "scale": {
-                            "x": 0.45872518420219421,
-                            "y": 0.4583333432674408
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_filter": "disable",
+                        "visible": true
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 105,
+                        "crop_left": 83,
+                        "crop_right": 103,
+                        "crop_top": 149,
+                        "group_item_backup": false,
+                        "id": 5,
+                        "locked": true,
+                        "name": "Scryfall",
+                        "pos": {
+                            "x": 867.0,
+                            "y": 53.0
+                        },
+                        "private_settings": {},
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 0.67073172330856323,
+                            "y": 0.67102396488189697
+                        },
+                        "scale_filter": "disable",
+                        "visible": true
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "group_item_backup": false,
+                        "id": 8,
+                        "locked": true,
+                        "name": "Gameplay - Caster Cam",
+                        "pos": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "private_settings": {},
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_filter": "disable",
+                        "visible": true
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "group_item_backup": false,
+                        "id": 9,
+                        "locked": true,
+                        "name": "Game Overlay",
+                        "pos": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "private_settings": {
+                            "color": "",
+                            "color-preset": 0
+                        },
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_filter": "disable",
+                        "visible": true
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "group_item_backup": false,
+                        "id": 17,
+                        "locked": true,
+                        "name": "Match Record",
+                        "pos": {
+                            "x": 402.0,
+                            "y": 677.0
+                        },
+                        "private_settings": {},
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_filter": "disable",
+                        "visible": true
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "group_item_backup": false,
+                        "id": 10,
+                        "locked": true,
+                        "name": "Player Left",
+                        "pos": {
+                            "x": 13.0,
+                            "y": 679.0
+                        },
+                        "private_settings": {},
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_filter": "disable",
+                        "visible": true
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "group_item_backup": false,
+                        "id": 11,
+                        "locked": true,
+                        "name": "Player Right",
+                        "pos": {
+                            "x": 617.0,
+                            "y": 679.0
+                        },
+                        "private_settings": {},
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_filter": "disable",
+                        "visible": true
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "group_item_backup": false,
+                        "id": 13,
+                        "locked": true,
+                        "name": "Caster Left",
+                        "pos": {
+                            "x": 892.0,
+                            "y": 655.0
+                        },
+                        "private_settings": {},
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 0.72500002384185791,
+                            "y": 0.72222220897674561
+                        },
+                        "scale_filter": "disable",
+                        "visible": true
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "group_item_backup": false,
+                        "id": 14,
+                        "locked": true,
+                        "name": "Caster Right",
+                        "pos": {
+                            "x": 1162.0,
+                            "y": 652.0
+                        },
+                        "private_settings": {},
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 0.76041668653488159,
+                            "y": 0.75675678253173828
+                        },
+                        "scale_filter": "disable",
+                        "visible": true
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "group_item_backup": false,
+                        "id": 16,
+                        "locked": true,
+                        "name": "Gameplay Chat",
+                        "pos": {
+                            "x": 1098.0,
+                            "y": 34.0
+                        },
+                        "private_settings": {},
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 0.81999999284744263,
+                            "y": 0.81999999284744263
                         },
                         "scale_filter": "disable",
                         "visible": true
@@ -708,7 +1233,7 @@
                         "group_item_backup": false,
                         "id": 3,
                         "locked": true,
-                        "name": "Game Overlay",
+                        "name": "StreamLabs AlertBox",
                         "pos": {
                             "x": 0.0,
                             "y": 0.0
@@ -720,7 +1245,7 @@
                             "y": 1.0
                         },
                         "scale_filter": "disable",
-                        "visible": false
+                        "visible": true
                     }
                 ]
             },
@@ -733,19 +1258,180 @@
             "deinterlace_mode": 0,
             "enabled": true,
             "flags": 0,
-            "hotkeys": {},
-            "id": "window_capture",
+            "hotkeys": {
+                "OBSBasic.SelectScene": [],
+                "libobs.hide_scene_item.BRB": [],
+                "libobs.hide_scene_item.Counting Down": [],
+                "libobs.hide_scene_item.Players": [],
+                "libobs.hide_scene_item.Splashscreen": [],
+                "libobs.hide_scene_item.StreamLabs AlertBox": [],
+                "libobs.show_scene_item.BRB": [],
+                "libobs.show_scene_item.Counting Down": [],
+                "libobs.show_scene_item.Players": [],
+                "libobs.show_scene_item.Splashscreen": [],
+                "libobs.show_scene_item.StreamLabs AlertBox": []
+            },
+            "id": "scene",
             "mixers": 0,
             "monitoring_type": 0,
             "muted": false,
-            "name": "Firefox Draft",
+            "name": "Stream Incoming",
+            "prev_ver": 402653187,
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
             "push-to-talk": false,
             "push-to-talk-delay": 0,
             "settings": {
-                "window": "VRD 2019-08-25 - Google Sheets - Google Chrome:Chrome_WidgetWin_1:chrome.exe"
+                "custom_size": false,
+                "id_counter": 12,
+                "items": [
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "group_item_backup": false,
+                        "id": 3,
+                        "locked": true,
+                        "name": "Splashscreen",
+                        "pos": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "private_settings": {},
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_filter": "disable",
+                        "visible": true
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 342,
+                        "crop_left": 401,
+                        "crop_right": 86,
+                        "crop_top": 127,
+                        "group_item_backup": false,
+                        "id": 10,
+                        "locked": true,
+                        "name": "Counting Down",
+                        "pos": {
+                            "x": 787.0,
+                            "y": 401.0
+                        },
+                        "private_settings": {},
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_filter": "disable",
+                        "visible": false
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "group_item_backup": false,
+                        "id": 11,
+                        "locked": false,
+                        "name": "BRB",
+                        "pos": {
+                            "x": 804.0,
+                            "y": 461.0
+                        },
+                        "private_settings": {},
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 1.1822429895401001,
+                            "y": 1.1842105388641357
+                        },
+                        "scale_filter": "disable",
+                        "visible": true
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "group_item_backup": false,
+                        "id": 12,
+                        "locked": false,
+                        "name": "Players",
+                        "pos": {
+                            "x": 376.0,
+                            "y": 165.0
+                        },
+                        "private_settings": {},
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 0.2076822966337204,
+                            "y": 0.20751953125
+                        },
+                        "scale_filter": "disable",
+                        "visible": false
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "group_item_backup": false,
+                        "id": 4,
+                        "locked": true,
+                        "name": "StreamLabs AlertBox",
+                        "pos": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "private_settings": {},
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_filter": "disable",
+                        "visible": true
+                    }
+                ]
             },
             "sync": 0,
             "volume": 1.0
@@ -780,6 +1466,7 @@
             "monitoring_type": 0,
             "muted": false,
             "name": "Draft",
+            "prev_ver": 402653187,
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
@@ -799,15 +1486,15 @@
                         "bounds_type": 2,
                         "crop_bottom": 46,
                         "crop_left": 45,
-                        "crop_right": 19,
-                        "crop_top": 231,
+                        "crop_right": 185,
+                        "crop_top": 234,
                         "group_item_backup": false,
                         "id": 1,
                         "locked": true,
                         "name": "Firefox Draft",
                         "pos": {
-                            "x": 10.0,
-                            "y": -34.0
+                            "x": 1.0,
+                            "y": -57.0
                         },
                         "private_settings": {},
                         "rot": 0.0,
@@ -826,23 +1513,23 @@
                         },
                         "bounds_align": 0,
                         "bounds_type": 0,
-                        "crop_bottom": 201,
-                        "crop_left": 193,
-                        "crop_right": 202,
-                        "crop_top": 150,
+                        "crop_bottom": 119,
+                        "crop_left": 88,
+                        "crop_right": 104,
+                        "crop_top": 155,
                         "group_item_backup": false,
                         "id": 3,
                         "locked": true,
                         "name": "Scryfall",
                         "pos": {
-                            "x": 1052.1065673828125,
-                            "y": 0.0
+                            "x": 1053.0,
+                            "y": 4.0
                         },
                         "private_settings": {},
                         "rot": 0.0,
                         "scale": {
-                            "x": 0.69905954599380493,
-                            "y": 0.69854468107223511
+                            "x": 0.68944096565246582,
+                            "y": 0.68792712688446045
                         },
                         "scale_filter": "disable",
                         "visible": true
@@ -1032,24 +1719,43 @@
             "deinterlace_mode": 0,
             "enabled": true,
             "flags": 0,
+            "hotkeys": {},
+            "id": "window_capture",
+            "mixers": 0,
+            "monitoring_type": 0,
+            "muted": false,
+            "name": "Firefox Draft",
+            "prev_ver": 402653187,
+            "private_settings": {},
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "settings": {
+                "window": "VRD 2019-11-24 - Google Sheets - Google Chrome:Chrome_WidgetWin_1:chrome.exe"
+            },
+            "sync": 0,
+            "volume": 1.0
+        },
+        {
+            "balance": 0.5,
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
+            "enabled": true,
+            "flags": 0,
             "hotkeys": {
                 "OBSBasic.SelectScene": [],
-                "libobs.hide_scene_item.BRB": [],
-                "libobs.hide_scene_item.Counting Down": [],
-                "libobs.hide_scene_item.Players": [],
-                "libobs.hide_scene_item.Splashscreen": [],
-                "libobs.hide_scene_item.StreamLabs AlertBox": [],
-                "libobs.show_scene_item.BRB": [],
-                "libobs.show_scene_item.Counting Down": [],
-                "libobs.show_scene_item.Players": [],
-                "libobs.show_scene_item.Splashscreen": [],
-                "libobs.show_scene_item.StreamLabs AlertBox": []
+                "libobs.hide_scene_item.Caster Webcam": [],
+                "libobs.hide_scene_item.Game Overlay": [],
+                "libobs.show_scene_item.Caster Webcam": [],
+                "libobs.show_scene_item.Game Overlay": []
             },
             "id": "scene",
             "mixers": 0,
             "monitoring_type": 0,
             "muted": false,
-            "name": "Stream Incoming",
+            "name": "Gameplay - Caster Cam",
+            "prev_ver": 402653187,
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
@@ -1057,8 +1763,37 @@
             "push-to-talk-delay": 0,
             "settings": {
                 "custom_size": false,
-                "id_counter": 12,
+                "id_counter": 3,
                 "items": [
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 139,
+                        "crop_right": 265,
+                        "crop_top": 59,
+                        "group_item_backup": false,
+                        "id": 1,
+                        "locked": true,
+                        "name": "Caster Webcam",
+                        "pos": {
+                            "x": 868.0,
+                            "y": 388.0
+                        },
+                        "private_settings": {},
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 0.45872518420219421,
+                            "y": 0.4583333432674408
+                        },
+                        "scale_filter": "disable",
+                        "visible": true
+                    },
                     {
                         "align": 5,
                         "bounds": {
@@ -1074,39 +1809,10 @@
                         "group_item_backup": false,
                         "id": 3,
                         "locked": true,
-                        "name": "Splashscreen",
+                        "name": "Game Overlay",
                         "pos": {
                             "x": 0.0,
                             "y": 0.0
-                        },
-                        "private_settings": {},
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "scale_filter": "disable",
-                        "visible": true
-                    },
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 342,
-                        "crop_left": 401,
-                        "crop_right": 86,
-                        "crop_top": 127,
-                        "group_item_backup": false,
-                        "id": 10,
-                        "locked": true,
-                        "name": "Counting Down",
-                        "pos": {
-                            "x": 787.0,
-                            "y": 401.0
                         },
                         "private_settings": {},
                         "rot": 0.0,
@@ -1116,524 +1822,6 @@
                         },
                         "scale_filter": "disable",
                         "visible": false
-                    },
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "group_item_backup": false,
-                        "id": 11,
-                        "locked": false,
-                        "name": "BRB",
-                        "pos": {
-                            "x": 804.0,
-                            "y": 461.0
-                        },
-                        "private_settings": {},
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 1.1822429895401001,
-                            "y": 1.1842105388641357
-                        },
-                        "scale_filter": "disable",
-                        "visible": true
-                    },
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "group_item_backup": false,
-                        "id": 12,
-                        "locked": false,
-                        "name": "Players",
-                        "pos": {
-                            "x": 376.0,
-                            "y": 165.0
-                        },
-                        "private_settings": {},
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 0.2076822966337204,
-                            "y": 0.20751953125
-                        },
-                        "scale_filter": "disable",
-                        "visible": true
-                    },
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "group_item_backup": false,
-                        "id": 4,
-                        "locked": true,
-                        "name": "StreamLabs AlertBox",
-                        "pos": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "private_settings": {},
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "scale_filter": "disable",
-                        "visible": true
-                    }
-                ]
-            },
-            "sync": 0,
-            "volume": 1.0
-        },
-        {
-            "balance": 0.5,
-            "deinterlace_field_order": 0,
-            "deinterlace_mode": 0,
-            "enabled": true,
-            "flags": 0,
-            "hotkeys": {
-                "OBSBasic.SelectScene": [],
-                "libobs.hide_scene_item.Caster Left": [],
-                "libobs.hide_scene_item.Caster Right": [],
-                "libobs.hide_scene_item.Game Overlay": [],
-                "libobs.hide_scene_item.Gameplay - Caster Cam": [],
-                "libobs.hide_scene_item.Player Camera": [],
-                "libobs.hide_scene_item.Player Left": [],
-                "libobs.hide_scene_item.Player Right": [],
-                "libobs.hide_scene_item.Scryfall": [],
-                "libobs.hide_scene_item.StreamLabs AlertBox": [],
-                "libobs.hide_scene_item.Text (GDI+)": [],
-                "libobs.show_scene_item.Caster Left": [],
-                "libobs.show_scene_item.Caster Right": [],
-                "libobs.show_scene_item.Game Overlay": [],
-                "libobs.show_scene_item.Gameplay - Caster Cam": [],
-                "libobs.show_scene_item.Player Camera": [],
-                "libobs.show_scene_item.Player Left": [],
-                "libobs.show_scene_item.Player Right": [],
-                "libobs.show_scene_item.Scryfall": [],
-                "libobs.show_scene_item.StreamLabs AlertBox": [],
-                "libobs.show_scene_item.Text (GDI+)": []
-            },
-            "id": "scene",
-            "mixers": 0,
-            "monitoring_type": 0,
-            "muted": false,
-            "name": "Game Play",
-            "private_settings": {},
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "settings": {
-                "custom_size": false,
-                "id_counter": 14,
-                "items": [
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "group_item_backup": false,
-                        "id": 4,
-                        "locked": true,
-                        "name": "Player Camera",
-                        "pos": {
-                            "x": -235.0,
-                            "y": 0.0
-                        },
-                        "private_settings": {},
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "scale_filter": "disable",
-                        "visible": true
-                    },
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 210,
-                        "crop_left": 194,
-                        "crop_right": 207,
-                        "crop_top": 149,
-                        "group_item_backup": false,
-                        "id": 5,
-                        "locked": true,
-                        "name": "Scryfall",
-                        "pos": {
-                            "x": 951.0,
-                            "y": 20.0
-                        },
-                        "private_settings": {},
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 0.71875,
-                            "y": 0.71937638521194458
-                        },
-                        "scale_filter": "disable",
-                        "visible": true
-                    },
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "group_item_backup": false,
-                        "id": 8,
-                        "locked": true,
-                        "name": "Gameplay - Caster Cam",
-                        "pos": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "private_settings": {},
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "scale_filter": "disable",
-                        "visible": true
-                    },
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "group_item_backup": false,
-                        "id": 9,
-                        "locked": true,
-                        "name": "Game Overlay",
-                        "pos": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "private_settings": {
-                            "color": "",
-                            "color-preset": 0
-                        },
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "scale_filter": "disable",
-                        "visible": true
-                    },
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "group_item_backup": false,
-                        "id": 7,
-                        "locked": true,
-                        "name": "Text (GDI+)",
-                        "pos": {
-                            "x": 412.0,
-                            "y": 0.0
-                        },
-                        "private_settings": {},
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "scale_filter": "disable",
-                        "visible": true
-                    },
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "group_item_backup": false,
-                        "id": 10,
-                        "locked": true,
-                        "name": "Player Left",
-                        "pos": {
-                            "x": 13.0,
-                            "y": 679.0
-                        },
-                        "private_settings": {},
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "scale_filter": "disable",
-                        "visible": true
-                    },
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "group_item_backup": false,
-                        "id": 11,
-                        "locked": true,
-                        "name": "Player Right",
-                        "pos": {
-                            "x": 617.0,
-                            "y": 679.0
-                        },
-                        "private_settings": {},
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "scale_filter": "disable",
-                        "visible": true
-                    },
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "group_item_backup": false,
-                        "id": 13,
-                        "locked": true,
-                        "name": "Caster Left",
-                        "pos": {
-                            "x": 902.0,
-                            "y": 694.0
-                        },
-                        "private_settings": {},
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 0.72500002384185791,
-                            "y": 0.72222220897674561
-                        },
-                        "scale_filter": "disable",
-                        "visible": true
-                    },
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "group_item_backup": false,
-                        "id": 14,
-                        "locked": true,
-                        "name": "Caster Right",
-                        "pos": {
-                            "x": 1105.0,
-                            "y": 693.0
-                        },
-                        "private_settings": {},
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 0.75,
-                            "y": 0.75
-                        },
-                        "scale_filter": "disable",
-                        "visible": true
-                    },
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "group_item_backup": false,
-                        "id": 3,
-                        "locked": true,
-                        "name": "StreamLabs AlertBox",
-                        "pos": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "private_settings": {},
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "scale_filter": "disable",
-                        "visible": true
-                    }
-                ]
-            },
-            "sync": 0,
-            "volume": 1.0
-        },
-        {
-            "balance": 0.5,
-            "deinterlace_field_order": 0,
-            "deinterlace_mode": 0,
-            "enabled": true,
-            "flags": 0,
-            "hotkeys": {
-                "OBSBasic.SelectScene": [],
-                "libobs.hide_scene_item.Chrome Players": [],
-                "libobs.hide_scene_item.StreamLabs AlertBox": [],
-                "libobs.show_scene_item.Chrome Players": [],
-                "libobs.show_scene_item.StreamLabs AlertBox": []
-            },
-            "id": "scene",
-            "mixers": 0,
-            "monitoring_type": 0,
-            "muted": false,
-            "name": "Players Profiles",
-            "private_settings": {},
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "settings": {
-                "custom_size": false,
-                "id_counter": 5,
-                "items": [
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 16,
-                        "crop_left": 4,
-                        "crop_right": 0,
-                        "crop_top": 111,
-                        "group_item_backup": false,
-                        "id": 3,
-                        "locked": true,
-                        "name": "Chrome Players",
-                        "pos": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "private_settings": {},
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 1.0070810317993164,
-                            "y": 1.0078247785568237
-                        },
-                        "scale_filter": "disable",
-                        "visible": true
-                    },
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "group_item_backup": false,
-                        "id": 5,
-                        "locked": true,
-                        "name": "StreamLabs AlertBox",
-                        "pos": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "private_settings": {},
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "scale_filter": "disable",
-                        "visible": true
                     }
                 ]
             },
@@ -1651,7 +1839,8 @@
             "mixers": 0,
             "monitoring_type": 0,
             "muted": false,
-            "name": "Chrome Players",
+            "name": "Scryfall",
+            "prev_ver": 402653187,
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
@@ -1659,226 +1848,7 @@
             "push-to-talk-delay": 0,
             "settings": {
                 "cursor": false,
-                "owner_name": "Microsoft Edge",
-                "window": "St Louis Vintage Rotisserie Draft - Google Chrome:Chrome_WidgetWin_1:chrome.exe",
-                "window_name": "St Louis Vintage Rotisserie Draft"
-            },
-            "sync": 0,
-            "volume": 1.0
-        },
-        {
-            "balance": 0.5,
-            "deinterlace_field_order": 0,
-            "deinterlace_mode": 0,
-            "enabled": true,
-            "flags": 0,
-            "hotkeys": {
-                "OBSBasic.SelectScene": [],
-                "libobs.hide_scene_item.Ancestral Recall": [],
-                "libobs.hide_scene_item.Black Lotus": [],
-                "libobs.hide_scene_item.Caster Webcam": [],
-                "libobs.hide_scene_item.Question Mark": [],
-                "libobs.hide_scene_item.Splashscreen": [],
-                "libobs.hide_scene_item.StreamLabs AlertBox": [],
-                "libobs.show_scene_item.Ancestral Recall": [],
-                "libobs.show_scene_item.Black Lotus": [],
-                "libobs.show_scene_item.Caster Webcam": [],
-                "libobs.show_scene_item.Question Mark": [],
-                "libobs.show_scene_item.Splashscreen": [],
-                "libobs.show_scene_item.StreamLabs AlertBox": []
-            },
-            "id": "scene",
-            "mixers": 0,
-            "monitoring_type": 0,
-            "muted": false,
-            "name": "Lotus or Recall",
-            "private_settings": {},
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "settings": {
-                "custom_size": false,
-                "id_counter": 8,
-                "items": [
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "group_item_backup": false,
-                        "id": 1,
-                        "locked": true,
-                        "name": "Splashscreen",
-                        "pos": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "private_settings": {},
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "scale_filter": "disable",
-                        "visible": true
-                    },
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "group_item_backup": false,
-                        "id": 2,
-                        "locked": true,
-                        "name": "Black Lotus",
-                        "pos": {
-                            "x": 46.0,
-                            "y": 25.0
-                        },
-                        "private_settings": {},
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "scale_filter": "disable",
-                        "visible": true
-                    },
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "group_item_backup": false,
-                        "id": 3,
-                        "locked": true,
-                        "name": "Ancestral Recall",
-                        "pos": {
-                            "x": 764.0,
-                            "y": 26.0
-                        },
-                        "private_settings": {},
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "scale_filter": "disable",
-                        "visible": true
-                    },
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "group_item_backup": false,
-                        "id": 4,
-                        "locked": true,
-                        "name": "Question Mark",
-                        "pos": {
-                            "x": 590.0,
-                            "y": 259.0
-                        },
-                        "private_settings": {
-                            "color": "#55000000",
-                            "color-preset": 1
-                        },
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 1.154929518699646,
-                            "y": 1.1596639156341553
-                        },
-                        "scale_filter": "disable",
-                        "visible": true
-                    },
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 163,
-                        "crop_left": 215,
-                        "crop_right": 377,
-                        "crop_top": 0,
-                        "group_item_backup": false,
-                        "id": 8,
-                        "locked": true,
-                        "name": "Caster Webcam",
-                        "pos": {
-                            "x": 480.0,
-                            "y": 450.00341796875
-                        },
-                        "private_settings": {},
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 0.46656978130340576,
-                            "y": 0.46678024530410767
-                        },
-                        "scale_filter": "disable",
-                        "visible": true
-                    },
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "group_item_backup": false,
-                        "id": 7,
-                        "locked": true,
-                        "name": "StreamLabs AlertBox",
-                        "pos": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "private_settings": {},
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "scale_filter": "disable",
-                        "visible": true
-                    }
-                ]
+                "window": "Oko, Thief of Crowns · Throne of Eldraine (ELD) #22197 · Scryfall Magic#3A The Gathering Search - Google Chrome:Chrome_WidgetWin_1:chrome.exe"
             },
             "sync": 0,
             "volume": 1.0
@@ -1890,334 +1860,27 @@
             "enabled": true,
             "flags": 0,
             "hotkeys": {},
-            "id": "image_source",
+            "id": "text_gdiplus",
             "mixers": 0,
             "monitoring_type": 0,
             "muted": false,
-            "name": "Splashscreen",
+            "name": "Player Left",
+            "prev_ver": 402653187,
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
             "push-to-talk": false,
             "push-to-talk-delay": 0,
             "settings": {
-                "file": "C:/Users/Jason Thurston/Desktop/STLVRD-Stream/Windows/OBS Resources/splash-screen.png",
-                "unload": true
-            },
-            "sync": 0,
-            "volume": 1.0
-        },
-        {
-            "balance": 0.5,
-            "deinterlace_field_order": 0,
-            "deinterlace_mode": 0,
-            "enabled": true,
-            "flags": 0,
-            "hotkeys": {},
-            "id": "image_source",
-            "mixers": 0,
-            "monitoring_type": 0,
-            "muted": false,
-            "name": "Black Lotus",
-            "private_settings": {},
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "settings": {
-                "file": "C:/Users/Jason Thurston/Desktop/VRD/cards/Black-Lotus.jpg",
-                "unload": true
-            },
-            "sync": 0,
-            "volume": 1.0
-        },
-        {
-            "balance": 0.5,
-            "deinterlace_field_order": 0,
-            "deinterlace_mode": 0,
-            "enabled": true,
-            "flags": 0,
-            "hotkeys": {},
-            "id": "image_source",
-            "mixers": 0,
-            "monitoring_type": 0,
-            "muted": false,
-            "name": "Ancestral Recall",
-            "private_settings": {},
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "settings": {
-                "file": "C:/Users/Jason Thurston/Desktop/VRD/cards/Ancestral-Recall.jpg",
-                "unload": true
-            },
-            "sync": 0,
-            "volume": 1.0
-        },
-        {
-            "balance": 0.5,
-            "deinterlace_field_order": 0,
-            "deinterlace_mode": 0,
-            "enabled": true,
-            "flags": 0,
-            "hotkeys": {},
-            "id": "text_ft2_source",
-            "mixers": 0,
-            "monitoring_type": 0,
-            "muted": false,
-            "name": "Question Mark",
-            "private_settings": {},
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "settings": {
-                "color1": 4278190080,
-                "color2": 4278190080,
+                "color": 4278190080,
+                "file": "Z:/katerberg/VRD/Assets/PlayerLeft.txt",
                 "font": {
-                    "face": "Arial Black",
-                    "flags": 1,
-                    "size": 128,
+                    "face": "Arial",
+                    "flags": 0,
+                    "size": 30,
                     "style": "Regular"
                 },
-                "text": "?"
-            },
-            "sync": 0,
-            "volume": 1.0
-        },
-        {
-            "balance": 0.5,
-            "deinterlace_field_order": 0,
-            "deinterlace_mode": 0,
-            "enabled": true,
-            "flags": 0,
-            "hotkeys": {},
-            "id": "browser_source",
-            "mixers": 0,
-            "monitoring_type": 0,
-            "muted": false,
-            "name": "AlertBox Widget",
-            "private_settings": {},
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "settings": {
-                "fps": 29,
-                "fps_custom": true,
-                "height": 400,
-                "url": "https://streamlabs.com/alert-box/v3/FB27400A11E1F034A724?follows=1&subscriptions=1&resubs=1&donations=1&hosts=1&bits=1&raids=1&redemptions=1&facemaskdonations=1",
-                "width": 600
-            },
-            "sync": 0,
-            "volume": 1.0
-        },
-        {
-            "balance": 0.5,
-            "deinterlace_field_order": 0,
-            "deinterlace_mode": 0,
-            "enabled": true,
-            "flags": 0,
-            "hotkeys": {
-                "OBSBasic.SelectScene": [],
-                "libobs.hide_scene_item.AlertBox Widget": [],
-                "libobs.show_scene_item.AlertBox Widget": []
-            },
-            "id": "scene",
-            "mixers": 0,
-            "monitoring_type": 0,
-            "muted": false,
-            "name": "StreamLabs AlertBox",
-            "private_settings": {},
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "settings": {
-                "custom_size": false,
-                "id_counter": 1,
-                "items": [
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "group_item_backup": false,
-                        "id": 1,
-                        "locked": false,
-                        "name": "AlertBox Widget",
-                        "pos": {
-                            "x": 918.0,
-                            "y": 0.0
-                        },
-                        "private_settings": {},
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 0.30166667699813843,
-                            "y": 0.30125001072883606
-                        },
-                        "scale_filter": "disable",
-                        "visible": true
-                    }
-                ]
-            },
-            "sync": 0,
-            "volume": 1.0
-        },
-        {
-            "balance": 0.5,
-            "deinterlace_field_order": 0,
-            "deinterlace_mode": 0,
-            "enabled": true,
-            "flags": 0,
-            "hotkeys": {
-                "OBSBasic.SelectScene": [],
-                "libobs.hide_scene_item.Challonge Standings": [],
-                "libobs.hide_scene_item.Splashscreen": [],
-                "libobs.hide_scene_item.StreamLabs AlertBox": [],
-                "libobs.show_scene_item.Challonge Standings": [],
-                "libobs.show_scene_item.Splashscreen": [],
-                "libobs.show_scene_item.StreamLabs AlertBox": []
-            },
-            "id": "scene",
-            "mixers": 0,
-            "monitoring_type": 0,
-            "muted": false,
-            "name": "Standings",
-            "private_settings": {},
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "settings": {
-                "custom_size": false,
-                "id_counter": 5,
-                "items": [
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "group_item_backup": false,
-                        "id": 2,
-                        "locked": true,
-                        "name": "Splashscreen",
-                        "pos": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "private_settings": {},
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "scale_filter": "disable",
-                        "visible": true
-                    },
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 375,
-                        "crop_left": 110,
-                        "crop_right": 100,
-                        "crop_top": 519,
-                        "group_item_backup": false,
-                        "id": 1,
-                        "locked": true,
-                        "name": "Challonge Standings",
-                        "pos": {
-                            "x": 119.0,
-                            "y": 215.0
-                        },
-                        "private_settings": {},
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "scale_filter": "disable",
-                        "visible": true
-                    },
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "group_item_backup": false,
-                        "id": 5,
-                        "locked": true,
-                        "name": "StreamLabs AlertBox",
-                        "pos": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "private_settings": {},
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "scale_filter": "disable",
-                        "visible": true
-                    }
-                ]
-            },
-            "sync": 0,
-            "volume": 1.0
-        },
-        {
-            "balance": 0.5,
-            "deinterlace_field_order": 0,
-            "deinterlace_mode": 0,
-            "enabled": true,
-            "flags": 0,
-            "hotkeys": {},
-            "id": "browser_source",
-            "mixers": 0,
-            "monitoring_type": 0,
-            "muted": false,
-            "name": "Challonge Standings",
-            "private_settings": {},
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "settings": {
-                "css": "body { background-color: rgba(0, 0, 0, 0); margin: 0px auto; overflow: hidden; }",
-                "fps_custom": true,
-                "height": 1200,
-                "restart_when_active": true,
-                "shutdown": false,
-                "url": "https://challonge.com/8aroof4o/standings",
-                "width": 1280
+                "read_from_file": true
             },
             "sync": 0,
             "volume": 1.0
@@ -2238,7 +1901,8 @@
             "mixers": 255,
             "monitoring_type": 0,
             "muted": true,
-            "name": "Player Camera",
+            "name": "Caster Webcam",
+            "prev_ver": 402653187,
             "private_settings": {
                 "mixer_hidden": true
             },
@@ -2248,132 +1912,12 @@
             "push-to-talk-delay": 0,
             "settings": {
                 "active": true,
-                "frame_interval": 417083,
+                "frame_interval": 166666,
                 "last_resolution": "1280x720",
-                "last_video_device_id": "c922 Pro Stream Webcam:\\\\?\\usb#22vid_046d&pid_085c&mi_00#227&796360d&0&0000#22{65e8773d-8f56-11d0-a3b9-00a0c9223196}\\global",
+                "last_video_device_id": "c922 Pro Stream Webcam:\\\\?\\usb#22vid_046d&pid_085c&mi_00#227&76bb180&0&0000#22{65e8773d-8f56-11d0-a3b9-00a0c9223196}\\global",
                 "res_type": 1,
                 "resolution": "1280x720",
-                "video_device_id": "c922 Pro Stream Webcam:\\\\?\\usb#22vid_046d&pid_085c&mi_00#227&796360d&0&0000#22{65e8773d-8f56-11d0-a3b9-00a0c9223196}\\global"
-            },
-            "sync": 0,
-            "volume": 1.0
-        },
-        {
-            "balance": 0.5,
-            "deinterlace_field_order": 0,
-            "deinterlace_mode": 0,
-            "enabled": true,
-            "flags": 0,
-            "hotkeys": {},
-            "id": "text_gdiplus",
-            "mixers": 0,
-            "monitoring_type": 0,
-            "muted": false,
-            "name": "BRB",
-            "private_settings": {},
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "settings": {
-                "color": 4278190080,
-                "font": {
-                    "face": "Arial",
-                    "flags": 0,
-                    "size": 36,
-                    "style": "Regular"
-                },
-                "outline": true,
-                "outline_color": 4278190080,
-                "text": "Be Right Back!"
-            },
-            "sync": 0,
-            "volume": 1.0
-        },
-        {
-            "balance": 0.5,
-            "deinterlace_field_order": 0,
-            "deinterlace_mode": 0,
-            "enabled": true,
-            "flags": 0,
-            "hotkeys": {
-                "SlideShow.NextSlide": [],
-                "SlideShow.PlayPause": [],
-                "SlideShow.PreviousSlide": [],
-                "SlideShow.Restart": [],
-                "SlideShow.Stop": []
-            },
-            "id": "slideshow",
-            "mixers": 0,
-            "monitoring_type": 0,
-            "muted": false,
-            "name": "Players",
-            "private_settings": {},
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "settings": {
-                "files": [
-                    {
-                        "hidden": false,
-                        "selected": false,
-                        "value": "C:/Users/Jason Thurston/Desktop/stl-vrd/src/static/pictures"
-                    }
-                ],
-                "playback_behavior": "always_play",
-                "slide_time": 5000
-            },
-            "sync": 0,
-            "volume": 1.0
-        },
-        {
-            "balance": 0.5,
-            "deinterlace_field_order": 0,
-            "deinterlace_mode": 0,
-            "enabled": true,
-            "flags": 0,
-            "hotkeys": {},
-            "id": "text_gdiplus",
-            "mixers": 0,
-            "monitoring_type": 0,
-            "muted": false,
-            "name": "Caster Left",
-            "private_settings": {},
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "settings": {
-                "color": 4278190080,
-                "file": "C:/Users/Jason Thurston/Desktop/STLVRD-Stream/Windows/OBS Resources/Caster Stage Left.txt",
-                "read_from_file": true
-            },
-            "sync": 0,
-            "volume": 1.0
-        },
-        {
-            "balance": 0.5,
-            "deinterlace_field_order": 0,
-            "deinterlace_mode": 0,
-            "enabled": true,
-            "flags": 0,
-            "hotkeys": {},
-            "id": "text_gdiplus",
-            "mixers": 0,
-            "monitoring_type": 0,
-            "muted": false,
-            "name": "Caster Right",
-            "private_settings": {},
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "settings": {
-                "align": "right",
-                "color": 4278190080,
-                "file": "C:/Users/Jason Thurston/Desktop/STLVRD-Stream/Windows/OBS Resources/Caster Stage Right.txt",
-                "read_from_file": true
+                "video_device_id": "c922 Pro Stream Webcam:\\\\?\\usb#22vid_046d&pid_085c&mi_00#227&76bb180&0&0000#22{65e8773d-8f56-11d0-a3b9-00a0c9223196}\\global"
             },
             "sync": 0,
             "volume": 1.0
@@ -2387,15 +1931,16 @@
             "hotkeys": {
                 "OBSBasic.SelectScene": [],
                 "libobs.hide_scene_item.Caster Webcam": [],
-                "libobs.hide_scene_item.Draft Area Camera": [],
+                "libobs.hide_scene_item.StreamLabs AlertBox": [],
                 "libobs.show_scene_item.Caster Webcam": [],
-                "libobs.show_scene_item.Draft Area Camera": []
+                "libobs.show_scene_item.StreamLabs AlertBox": []
             },
             "id": "scene",
             "mixers": 0,
             "monitoring_type": 0,
             "muted": false,
-            "name": "Bottle",
+            "name": "Full Screen Casters",
+            "prev_ver": 402653187,
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
@@ -2403,7 +1948,7 @@
             "push-to-talk-delay": 0,
             "settings": {
                 "custom_size": false,
-                "id_counter": 3,
+                "id_counter": 2,
                 "items": [
                     {
                         "align": 5,
@@ -2420,16 +1965,16 @@
                         "group_item_backup": false,
                         "id": 1,
                         "locked": false,
-                        "name": "Draft Area Camera",
+                        "name": "Caster Webcam",
                         "pos": {
-                            "x": 200.0,
-                            "y": 63.0
+                            "x": 0.0,
+                            "y": 0.0
                         },
                         "private_settings": {},
                         "rot": 0.0,
                         "scale": {
-                            "x": 1.3687499761581421,
-                            "y": 1.3687499761581421
+                            "x": 1.0,
+                            "y": 1.0
                         },
                         "scale_filter": "disable",
                         "visible": true
@@ -2449,21 +1994,286 @@
                         "group_item_backup": false,
                         "id": 2,
                         "locked": false,
-                        "name": "Caster Webcam",
+                        "name": "StreamLabs AlertBox",
                         "pos": {
-                            "x": 200.0,
+                            "x": 0.0,
                             "y": 0.0
                         },
                         "private_settings": {},
                         "rot": 0.0,
                         "scale": {
-                            "x": 0.30703124403953552,
-                            "y": 0.30694442987442017
+                            "x": 1.0,
+                            "y": 1.0
                         },
                         "scale_filter": "disable",
                         "visible": true
                     }
                 ]
+            },
+            "sync": 0,
+            "volume": 1.0
+        },
+        {
+            "balance": 0.5,
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
+            "enabled": true,
+            "flags": 0,
+            "hotkeys": {},
+            "id": "image_source",
+            "mixers": 0,
+            "monitoring_type": 0,
+            "muted": false,
+            "name": "Game Overlay",
+            "prev_ver": 402653187,
+            "private_settings": {},
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "settings": {
+                "file": "C:/Users/Jason Thurston/Desktop/STLVRD-Stream/Windows/OBS Resources/GameScene.png"
+            },
+            "sync": 0,
+            "volume": 1.0
+        },
+        {
+            "balance": 0.5,
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
+            "enabled": true,
+            "flags": 0,
+            "hotkeys": {},
+            "id": "text_gdiplus",
+            "mixers": 0,
+            "monitoring_type": 0,
+            "muted": false,
+            "name": "Player Right",
+            "prev_ver": 402653187,
+            "private_settings": {},
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "settings": {
+                "align": "right",
+                "color": 4278190080,
+                "file": "Z:/katerberg/VRD/Assets/PlayerRight.txt",
+                "font": {
+                    "face": "Arial",
+                    "flags": 0,
+                    "size": 30,
+                    "style": "Regular"
+                },
+                "read_from_file": true
+            },
+            "sync": 0,
+            "volume": 1.0
+        },
+        {
+            "balance": 0.5,
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
+            "enabled": true,
+            "flags": 0,
+            "hotkeys": {},
+            "id": "image_source",
+            "mixers": 0,
+            "monitoring_type": 0,
+            "muted": false,
+            "name": "Draft Overlay",
+            "prev_ver": 402653187,
+            "private_settings": {},
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "settings": {
+                "file": "C:/Users/Jason Thurston/Desktop/STLVRD-Stream/Windows/OBS Resources/DraftScene.png"
+            },
+            "sync": 0,
+            "volume": 1.0
+        },
+        {
+            "balance": 0.5,
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
+            "enabled": true,
+            "flags": 0,
+            "hotkeys": {
+                "libobs.mute": [],
+                "libobs.push-to-mute": [],
+                "libobs.push-to-talk": [],
+                "libobs.unmute": []
+            },
+            "id": "browser_source",
+            "mixers": 0,
+            "monitoring_type": 0,
+            "muted": false,
+            "name": "Counting Down",
+            "prev_ver": 402653187,
+            "private_settings": {},
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "settings": {
+                "url": "https://w2.countingdownto.com/2508065"
+            },
+            "sync": 0,
+            "volume": 1.0
+        },
+        {
+            "balance": 0.5,
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
+            "enabled": true,
+            "flags": 0,
+            "hotkeys": {
+                "OBSBasic.SelectScene": [],
+                "libobs.hide_scene_item.Caster Webcam": [],
+                "libobs.hide_scene_item.Draft Area Camera": [],
+                "libobs.hide_scene_item.Player Camera": [],
+                "libobs.show_scene_item.Caster Webcam": [],
+                "libobs.show_scene_item.Draft Area Camera": [],
+                "libobs.show_scene_item.Player Camera": []
+            },
+            "id": "scene",
+            "mixers": 0,
+            "monitoring_type": 0,
+            "muted": false,
+            "name": "TEST camera views",
+            "prev_ver": 402653187,
+            "private_settings": {},
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "settings": {
+                "custom_size": false,
+                "id_counter": 5,
+                "items": [
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "group_item_backup": false,
+                        "id": 3,
+                        "locked": false,
+                        "name": "Draft Area Camera",
+                        "pos": {
+                            "x": 640.0,
+                            "y": 240.0
+                        },
+                        "private_settings": {},
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_filter": "disable",
+                        "visible": true
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 564.0,
+                            "y": 333.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 2,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "group_item_backup": false,
+                        "id": 4,
+                        "locked": false,
+                        "name": "Player Camera",
+                        "pos": {
+                            "x": 6.0,
+                            "y": 0.0
+                        },
+                        "private_settings": {},
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_filter": "disable",
+                        "visible": true
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 478.0,
+                            "y": 269.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 2,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "group_item_backup": false,
+                        "id": 5,
+                        "locked": false,
+                        "name": "Caster Webcam",
+                        "pos": {
+                            "x": 691.0,
+                            "y": 370.0
+                        },
+                        "private_settings": {},
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "scale_filter": "disable",
+                        "visible": true
+                    }
+                ]
+            },
+            "sync": 0,
+            "volume": 1.0
+        },
+        {
+            "balance": 0.5,
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
+            "enabled": true,
+            "flags": 0,
+            "hotkeys": {
+                "libobs.mute": [],
+                "libobs.push-to-mute": [],
+                "libobs.push-to-talk": [],
+                "libobs.unmute": []
+            },
+            "id": "dshow_input",
+            "mixers": 255,
+            "monitoring_type": 0,
+            "muted": true,
+            "name": "Draft Area Camera",
+            "prev_ver": 402653187,
+            "private_settings": {
+                "mixer_hidden": true
+            },
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "settings": {
+                "active": true,
+                "last_video_device_id": "c922 Pro Stream Webcam:\\\\?\\usb#22vid_046d&pid_085c&mi_00#228&76bb180&0&0000#22{65e8773d-8f56-11d0-a3b9-00a0c9223196}\\global",
+                "video_device_id": "c922 Pro Stream Webcam:\\\\?\\usb#22vid_046d&pid_085c&mi_00#228&76bb180&0&0000#22{65e8773d-8f56-11d0-a3b9-00a0c9223196}\\global"
             },
             "sync": 0,
             "volume": 1.0
